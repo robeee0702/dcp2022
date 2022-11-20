@@ -1,0 +1,372 @@
+header {
+    padding: 15px 0;
+    max-height: 82px;
+  }
+  .container {
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+  }
+  header ul {
+    display: inline-block;
+    margin-right: 30px;
+
+  }
+  header ul li {
+    display: inline-block;
+    margin-left: 0px;
+  }
+  .logo {
+    margin-left: -110px;
+  }
+  .dentalImg {
+    width: 328px;
+    max-height: 156px;
+  }
+  .phonenumber {
+    color:  #0f3d7e;
+    font-weight: bold;
+    margin-left: -20px;
+    margin-top: 16px;
+  }
+  header ul li a {
+    font-size: 17px;
+    font-weight: 500;
+    transition: 0.5s;
+  }
+  header ul .icon  {
+    display: inline-block;
+    margin-top: 5px;
+    margin-right: 24px;
+  }
+  .nav-links {
+    display: flex;
+    
+  }
+  .nav-links-sidebar {
+    display: flex;
+  }
+  header .search{
+    display: flex;
+    float: right;
+    margin-right: -200px;
+  }
+  header ul a {
+    display: inline-block;
+    padding: 10px;
+    letter-spacing: 0.2px;
+  }
+  header ul li a:hover {
+    color: #0f3d7e;
+    font-weight: 500;
+    transform: scale(1.08);
+    transition: all 0.4s;
+  }
+  .HeaderIcon {
+    margin-left: 20px;
+    transition: 0.5s;
+    color: black;
+  }
+  .HeaderIcon:hover {
+    color: #0f3d7e;
+    font-weight: 500;
+    cursor: pointer;
+    transform: scale(1.08);
+    transition: all 0.4s; 
+  }
+  .navbar-items-icon {
+    color: #000;
+    display: none;
+  }
+ 
+  header.active {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 28px 0 rgba(82, 81, 81, 0.06);
+    width: 100%;
+    z-index: 10;
+  }
+  @media screen and (max-width: 1150px) {
+
+    header .icon {
+      display: none;
+    }
+    .nav-links {
+      display: none;
+    }
+    .logo {
+        margin-left: -20px;
+    }
+    .phonenumber {
+        display: none;
+    }
+    header .search {
+      display: flex;
+      margin-right: 0px;
+    }
+    
+    .nav{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .nav-links-sidebar{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      margin-left: 285px;
+      margin-top: 60px;
+      border-radius: 10px;
+      width: 320px;
+      height: 520px; 
+      z-index: 13; 
+    }
+    header ul li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 12px;
+    }
+    
+    
+
+    .navbar-items-icon{
+      border-radius: 8px;
+      background-color: #0f3d7e;
+    }
+  
+    .nav-links-sidebar {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+    header ul li {
+      margin-bottom: 10px;
+    }
+  
+    .navbar-items-icon {
+      display: block;
+      position: absolute;
+      right: 30px;
+      font-size: 24px;
+      color: #000;
+      border: 1px solid #000;
+      padding: 5px 10px;
+    }
+
+  }
+  
+  @media screen and (max-width: 864px) {
+    header .icon {
+      display: none;
+    }
+    .nav-links {
+      display: none;
+    }
+    .logo {
+        margin-left: -20px;
+    }
+    .phonenumber {
+        display: none;
+    }
+    header .search {
+      display: flex;
+      margin-right: 0px;
+    }
+    
+    .nav{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .nav-links-sidebar{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      margin-left: 45px;
+      margin-top: 60px;
+      border-radius: 10px;
+      width: 320px;
+      height: 520px; 
+      z-index: 1; 
+    }
+    header ul li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 12px;
+    }
+    
+    
+
+    .navbar-items-icon{
+      border-radius: 8px;
+      background-color: #0f3d7e;
+    }
+  
+    .nav-links-sidebar {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+    header ul li {
+      margin-bottom: 10px;
+    }
+  
+    .navbar-items-icon {
+      display: block;
+      position: absolute;
+      right: 30px;
+      font-size: 24px;
+      padding-top: px;
+      color: #000;
+      border: 1px solid #000;
+      padding: 5px 10px;
+    }
+  }
+  @media screen and (max-width: 644px) {
+    header .icon {
+      display: none;
+    }
+    .nav-links {
+      display: none;
+    }
+    .logo {
+        margin-left: -20px;
+    }
+    .phonenumber {
+        display: none;
+    }
+    header .search {
+      display: flex;
+      margin-right: 190px;
+    }
+    
+    .nav{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .nav-links-sidebar{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      margin-left: -125px;
+      margin-top: 60px;
+      border-radius: 10px;
+      width: 320px;
+      height: 520px; 
+      z-index: 1; 
+    }
+    header ul li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 12px;
+    }
+    
+    
+
+    .navbar-items-icon{
+      border-radius: 8px;
+      background-color: #0f3d7e;
+    }
+  
+    .nav-links-sidebar {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+    header ul li {
+      margin-bottom: 10px;
+    }
+  
+    .navbar-items-icon {
+      display: block;
+      position: absolute;
+      right: 30px;
+      font-size: 24px;
+      padding-top: px;
+      color: #000;
+      border: 1px solid #000;
+      padding: 5px 10px;
+    }
+  }
+  @media screen and (max-width: 426px) {
+    header .icon {
+      display: none;
+    }
+    .nav-links {
+      display: none;
+    }
+    .logo {
+        margin-left: -20px;
+        max-width: 240px;
+    }
+    .phonenumber {
+        display: none;
+    }
+    header .search {
+      display: flex;
+      margin-right: 0px;
+    }
+    
+    .nav{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .nav-links-sidebar{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      margin-left: -245px;
+      margin-top: 70px;
+      border-radius: 10px;
+      width: 320px;
+      height: 520px; 
+      z-index: 1; 
+    }
+    header ul li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 12px;
+    }
+    
+    .dentalImg {
+      width: 228px;
+    }
+    
+
+    .navbar-items-icon{
+      border-radius: 8px;
+      background-color: #0f3d7e;
+    }
+  
+    .nav-links-sidebar {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+    header ul li {
+      margin-bottom: 10px;
+    }
+  
+    .navbar-items-icon {
+      display: block;
+      position: absolute;
+      right: 18px;
+      font-size: 10px;
+      padding-top: 20px;
+      color: #000;
+      border: 1px solid #000;
+      padding: 5px 10px;
+      
+    }
+  }

@@ -1,0 +1,80 @@
+{
+  "name": "webshop",
+  "proxy": "http://localhost:5000",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@cyntler/react-doc-viewer": "^1.8.1",
+    "@emailjs/browser": "^3.6.2",
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.5.1",
+    "@mui/material": "^5.5.1",
+    "@mui/styled-engine-sc": "^5.4.2",
+    "@react-pdf-viewer/core": "^3.7.0",
+    "@sendgrid/mail": "^7.4.0",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "antd": "^4.22.6",
+    "axios": "^0.27.2",
+    "js-cookie": "^3.0.1",
+    "path": "^0.12.7",
+    "pdf-viewer-reactjs": "^2.2.3",
+    "pdfjs-dist": "^2.15.349",
+    "pure-react-carousel": "^1.29.0",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.5.0",
+    "react-cookie": "^4.1.1",
+    "react-cookie-consent": "^8.0.1",
+    "react-dom": "^17.0.2",
+    "react-elastic-carousel": "^0.11.5",
+    "react-img-zoom": "^0.1.0",
+    "react-medium-image-zoom": "^5.0.2",
+    "react-paginate": "^8.1.3",
+    "react-pdf": "^5.7.2",
+    "react-redux": "^8.0.2",
+    "react-router-dom": "^5.3.0",
+    "react-scripts": "5.0.0",
+    "react-select": "^5.4.0",
+    "react-slick": "^0.29.0",
+    "react-toastify": "^9.0.8",
+    "react-use-cart": "^1.13.0",
+    "slick-carousel": "^1.8.1",
+    "stream": "^0.0.2",
+    "styled-components": "^5.3.3",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browser": {
+    "fs": false,
+    "path": false
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.1",
+    "netlify-cli": "^12.0.2"
+  }
+}

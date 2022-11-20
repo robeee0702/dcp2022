@@ -1,0 +1,165 @@
+.serviceContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(248, 250, 252);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    
+}
+.serviceContainer1 {
+    width: 100%;
+   padding: 10px;
+   margin-top: 16px;
+}
+.servicesCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top:46px;
+    padding-left: 140px;
+    padding-right: 140px;
+}
+.serviceCards:hover {
+    transform: scale(1.02);
+    transition: all 0.4s;
+}
+.serviceContainer2 {
+    width: 100%;
+    padding: 10px;
+    
+}
+.serviceLine {
+    display: flex;
+    height: 4px;
+    border: 0;
+    text-align: center;
+    border-top: 2px solid blue;
+    margin: 1em 0;
+    padding: 0;
+    width: 30%;
+    color: blue;
+}
+
+.serviceButton:hover{
+    transform: scale(1.01);
+    opacity: 0.8;
+}
+.serviceCards {
+    display: inline;
+    margin: 8px;
+
+}
+.servicePartners {
+    margin-top: 46px;
+
+}
+.servicePartnerList {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    padding: 12px;
+} 
+.servicePartnersGrid {
+    width: 360px;
+    height: 256px;
+    margin: 10px;
+    border: 2px solid rgb(2, 2, 111);
+    border-radius: 12px;
+    padding: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    box-shadow: rgba(0, 0, 0, 0.64) 0px 6px 16px;
+}
+.inspection {
+    margin: 12px;
+    border-radius: 32px;
+    background-color: rgb(234, 235, 234);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-shadow:rgba(0, 0, 0, 0.84) 0px 6px 16px;
+}
+.inspection2 {
+    margin: 12px;
+    border-radius: 32px;
+    background-color: rgb(148, 255, 126);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-shadow:rgba(0, 0, 0, 0.84) 0px 6px 16px;
+}
+.inspectionThings {
+    margin-left: 50px;
+    padding: 6px;
+    color: black;
+    font-size: large;
+    
+}
+
+
+
+
+
+
+
+@media screen and (max-width:1152px) {
+    .serviceContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 13px;
+        align-items: center;
+        margin-left: 5px;
+        margin-right: 5px;
+        
+    }
+    .serviceContainer1 {
+        width: 100%;
+       padding: 18px;
+    }
+    .serviceContainer2 {
+        width: 100%;
+        padding: 18px;
+        
+    }
+    .serviceContainer2 h1 {
+        font-size: 16px;
+    }
+    .servicesCards {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .servicePartnerList {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 12px;
+    } 
+}
+@media screen and (max-width:982px) {
+    
+    .serviceCards {
+        display: inline;
+    }
+    
+}
+@media screen and (max-width:682px) {
+    
+    .serviceCards {
+        display: flex;
+        flex-direction: column;
+        margin-left: -22px;
+    }
+    .servicePartnerList {
+        display: grid;
+        grid-template-columns: auto;
+        padding: 12px;
+    } 
+    .inspection {
+        margin: 12px;
+        padding: 8px;
+    }
+    .inspectionThings {
+        margin-left: 0px;
+        padding: 10px;
+        font-size: 16px;
+        
+    }
+}

@@ -1,0 +1,119 @@
+footer {
+    height: 310px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 20%, rgba(9,68,121,1) 65%, rgba(3,38,70,1) 100%);
+    padding: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 15px -5px;
+    color: #fff;
+  }
+  .container.grid1{
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+  }
+  .box h2 {
+    display: flex;
+    justify-content: center;
+  }
+  .box {
+    justify-content: center;
+    align-items: center;
+  }
+  footer p {
+    color: #fff;
+    margin: 20px 0;
+  }
+  img{
+    padding: 5px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    max-height: 46px;
+  }
+  .box a{
+    color: white;
+  }
+  footer .SocailIcon i {
+    background-color: #fff;
+    border: 1px solid #fff;
+  }
+  footer h2 {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+  footer li {
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  footer li:before {
+    content: "·";
+    font-size: 40px;
+    vertical-align: middle;
+    line-height: 10px;
+    margin-right: 20px;
+    color: #0f3d7e;
+  }
+  footer .box p {
+    margin: 0;
+    margin-top: 15px;
+  }
+  footer span {
+    color: #0f3d7e;
+    opacity: 1;
+  }
+  footer .icon {
+    margin-top: 20px;
+    display: flex;
+  }
+  
+  footer .icon i {
+    color: #38d16a;
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+  }
+  .legal {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    margin-top: 70px;
+    padding: 20px 0;
+  }
+  footer .grid1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+.pagesContent {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @media screen and (max-width:768px) {
+
+    footer {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      height: auto;
+      flex-direction: row; 
+      flex-flow: wrap; 
+    }
+    .box {
+      width: 100%;
+      box-sizing: border-box;
+      margin: 10px;
+    }
+    .container.grid1{
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      overflow: hidden;
+      height: auto;
+      flex-direction: row; 
+      flex-flow: wrap; 
+  
+    }
+    
+  }

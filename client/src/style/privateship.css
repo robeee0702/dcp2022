@@ -1,0 +1,57 @@
+.shippingCardPerson {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    padding: 14px;
+    width: 520px;
+}
+.checkInput {
+    margin-top: 16px;
+    margin-left: 60px;
+}
+.checkbox {
+   display: block;
+  } 
+.checkbox--active {
+    display: none;
+  }
+
+
+  .cartButton {
+    display: flex;
+    background-color: darkblue;
+    margin-top: 40px;
+    color: white;
+    border: none;
+    padding:12px;
+    border-radius: 12px;
+    font-size: 18px;
+
+  }
+  .cartButton:hover {
+    transition: all 0.4s;
+    transform: scale(1.02);
+    background-color: darkblue;
+    color: white;
+  }
+  .disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+
+@media screen and (max-width:920px) {
+    .shippingCardPerson {
+        width:480px;
+        margin-left: 40px;
+    }
+}
+@media screen and (max-width:680px) {
+    .shippingCardPerson {
+        width:352px;
+        margin-left: -48px;
+    }
+    .checkInput{
+        margin-left: 0px;
+    }
+}

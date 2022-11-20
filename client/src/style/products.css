@@ -1,0 +1,72 @@
+.ps-card {
+    width: 280px;
+    height: 370px;
+    box-shadow: 0 0 10px #000000;
+    margin: 12px 16px 35px 32px;
+    border-radius: 10px;
+}
+.ps-card:hover{
+    transform: scale(1.02);
+}
+
+.card-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card-line {
+    height: 4px;
+    border: 0;
+    text-align: center;
+    border-top: 1px solid grey;
+    margin: 0.4em 0;
+    padding: 0;
+    width: 140px;
+    color: #0f3d7e;
+}
+
+.card-body img {
+    width: 85%;
+    min-height: 150px;
+    transition: all 0.5s;
+}
+
+.ps-card:hover .card-header img {
+    transform: scale(1.04);
+}
+
+.card-body {
+    text-align: center;
+    padding: 0px 5px;
+}
+.card-body title{
+    display: flex;
+    overflow: hidden;
+    max-width: 250px;
+}
+
+.card-footer {
+    padding: 4px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cartChangeButton {
+    padding: 0px 5px;
+    border: none;
+    transition: all 0.5s;
+    border-radius: 3px;
+    background-color: transparent;
+    font-size: 19px;
+    color: #000000;
+}
+
+.cartChangeButton:hover {
+    transform: translateY(-5px);
+    color: black;
+}
+
+.cart-out {
+    font-size: 12px !important;
+}

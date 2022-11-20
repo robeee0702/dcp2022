@@ -1,0 +1,219 @@
+.shop-container {
+    min-height: 800px;
+}
+
+.shop-col {
+    display: grid;
+    grid-template-columns: 1fr 2fr 0.3fr;
+    grid-auto-rows: auto;
+    padding-top: 20px;
+    padding-left: 4px;
+}
+
+
+
+.shop-products {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    padding-top: 40px;
+    margin: 10px;
+    padding-left: 24px;
+}
+
+.shop-pagination {
+    display: flex;
+    margin-left: 200px;
+    text-align: center;
+    justify-content: center;
+    
+}
+.shop-menu {
+    margin-top: 40px;
+    display: grid;
+    border: none;
+    max-height: 520px;
+}
+.shop-line{
+    height: 4px;
+    border: 0;
+    text-align: center;
+    border-top: 1px solid grey;
+    margin: 0.1em 0;
+    opacity: 0.3;
+    margin-left: 36px;
+    width: 140px;
+    color: #0f3d7e;
+}
+
+
+.shop-btn {
+    margin-left: 25px;
+    background-color: transparent;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.shop-btn:hover {
+    transform: scale(1.04);
+    color: blue
+}
+
+.shop-btn svg {
+    transition: all 0.5s;
+}
+
+.shop-btn:hover svg {
+    color: blue;
+    margin-left: 5px;
+}
+
+.shop-pagination {
+    display: flex;
+    justify-content: center;
+}
+
+
+.paginationBttns {
+    width: 80%;
+    height: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+  
+.paginationBttns a {
+    padding: 5px 10px;
+    margin: 6px;
+    border-radius:20px;
+    border: 1px solid #000000;
+    color: #000000;
+    cursor: pointer;
+}
+  
+.paginationBttns a:hover {
+    color: #ffffff;
+    background-color: blue;
+}
+  
+.paginationActive a {
+    color: black;
+    background-color: white;
+}
+  
+.paginationDisabled a {
+    color: rgba(128, 128, 128, 0.11);
+    background-color: rgba(128, 128, 128, 0.11);;
+}
+
+.paginationDisabled:hover a {
+    background-color: rgba(128, 128, 128, 0.11);
+    color: rgba(128, 128, 128, 0.11);
+}
+
+
+@media screen and (max-width: 1254px) {
+    .shop-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .shop-col {
+        display: grid;
+        grid-template-columns: auto auto ;
+        overflow: hidden;
+    }
+    .shop-products {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 85%;
+        padding-left: 8px;
+        flex-wrap: wrap;
+    }
+    .shop-menu {
+        margin-top: 40px;
+        display: grid;
+        border: none;
+        max-height: 340px;
+    }
+    .shop-btn {
+        margin-left: 15px;
+        background-color: transparent;
+        margin-bottom: 10px;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    .shop-btn:hover {
+        transform: scale(1.04);
+        color: blue
+    }
+}
+@media screen and (max-width: 904px) {
+    .shop-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .shop-col {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .shop-products {
+        display: grid;
+        grid-template-rows: auto auto;
+        width: 100%;
+        margin-top: 180px;
+        align-items: center;
+        margin-left: -15px;
+        flex-wrap: wrap;
+    }
+    .shop-menu {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+        max-height: 520px;
+    }
+    .shop-btn {
+        margin-left: 15px;
+        background-color: transparent;
+        margin-bottom: 10px;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    .shop-btn:hover {
+        transform: scale(1.04);
+        color: blue
+    }
+}
+@media screen and (max-width: 648px) {
+    .shop-col {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        padding: 20px;
+    }
+    .shop-btn {
+        margin-bottom: 5px;
+    }
+    .shop-menu {
+        margin-top: 40px;
+        border: none;
+        max-height: 380px;
+    }
+    .shop-products {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        padding-left: 0px;
+        margin-top: 235px;
+        
+    }
+    .shop-pagination {
+        margin-left: 0px;
+    }
+
+}

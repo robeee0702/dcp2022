@@ -1,0 +1,133 @@
+.postPage {
+    padding: 30px;
+}
+.detailsContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.detailsCol1 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%; 
+}
+.detailsCol2 {
+    width: 45%;
+    margin: 15px;
+}
+.detailsImage {
+    margin-top: 15px;
+    min-height: 640px;
+    min-width: 100%;
+    max-height: auto;
+}
+.detailsImages {
+    margin-top: 15px;
+    min-height: 640px;
+    min-width: 100%;
+    max-height: auto;
+}
+
+.detBtn {
+    border: none;
+    background-color: white;
+    margin: 0px;
+    padding: 40px;
+    padding-left: 20px;
+}
+.arrowBackIcon {
+    margin-right: 220px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    border: 2px solid grey;
+    border-radius: 22px;
+}
+.arrowBackIcon:hover {
+    transform: scale(1.02);
+    color: darkblue;
+}
+.detailsInfos {
+    display: flex;
+}
+
+.detailsBtn {
+    padding: 4px 6px;
+    display: flex;
+    justify-content: space-around;
+    transition: all 0.5s;
+    border: none;
+    border-radius: 3px;
+    background-color: transparent;
+    font-size: 20px;
+    color: #000000;
+}
+
+.detailsBtn:hover {
+    transform: translateY(-2px);
+    color: black;
+}
+
+@media screen and (max-width:924px) {
+    .postPage {
+        padding: 14px;
+    }
+    .detailsContainer {
+        flex-direction: column;
+    }
+    .detailsCol1 {
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        width: 100%; 
+    }
+    .detailsCol2 {
+        width: 100%;
+        margin: 15px;
+    }
+    .detailsImage {
+        margin-top: 25px;
+        width: 100%;
+        max-height: 80vh;
+    }
+    .detailsInfos {
+        display: none;
+    }
+}
+@media screen and (max-width:486px) {
+    .postPage {
+        padding: 14px;
+    }
+    .detailsContainer {
+        flex-direction: column;
+    }
+    .detailsImage {
+        margin-top: 25px;
+        width: 100%;
+
+    }
+    .detailsCol2 {
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        margin-top: -230px;
+        top: 0;
+        left: 0;
+        width: 100%; 
+    }
+    .detailsImages {
+        width: 100%;
+        min-height: 290px;
+        
+    }
+    .detailsInfos {
+        display: none;
+    }
+}

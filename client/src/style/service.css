@@ -1,0 +1,80 @@
+.service-card {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+.serviceMargin {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width:1350px) {
+    .service-card {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        overflow: hidden;
+        background-repeat: no-repeat;
+    }
+}
+@media screen and (max-width:1230px) {
+    .service-card {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        margin-left: 6px;
+        overflow: hidden;
+        background-repeat: no-repeat;
+    }
+}
+@media screen and (max-width:1080px) {
+    .service-card {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+        overflow: hidden;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width:928px) {
+    .service-card {
+        display: grid;
+        grid-template-columns: auto auto;
+        flex-direction: row;
+        min-height: auto;
+        overflow: auto;
+        justify-content: center;
+        align-items: center;
+        margin-left: 12px;
+    }
+    .serviceMargin {
+        margin-bottom: 120px;
+        margin-top: 110px;
+    }
+    
+}
+@media screen and (max-width:488px) {
+    .service-card {
+        display: grid;
+        grid-template-columns: auto;
+        min-height: auto;
+        overflow: auto;
+        justify-content: center;
+        align-items: center;
+        margin-left: -12px;
+    }
+    .serviceMargin {
+        margin-bottom: 320px;
+        margin-top: 310px;
+    }
+}
