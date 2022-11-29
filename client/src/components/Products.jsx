@@ -22,7 +22,7 @@ const Products = ({ item, handleClick }) => {
 
 
   const format = (price) => {
-    return Number(price*1)     // SET PRICE EURO CONVERTER !
+    return Number(price*410)     // SET PRICE EURO CONVERTER !
       .toFixed(2)
       .replace(/\d(?=(\d{3})+\.)/g, "$&,");
   };

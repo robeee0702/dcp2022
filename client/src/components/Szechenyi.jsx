@@ -1,4 +1,3 @@
-import { minHeight } from "@mui/system";
 import React from "react";
 
 const Szechenyi = () => {

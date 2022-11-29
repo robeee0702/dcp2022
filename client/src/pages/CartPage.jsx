@@ -156,7 +156,7 @@ console.log(cartData)
             </div>
             <div className="cartPrice">
               <span
-               style={{ margin: "8px" }}>{format(item.price)},-Ft</span>
+               style={{ margin: "8px" }}>{format(item.price*410)},-Ft</span>
               <button
                 className="cartDelete"
                 style={{ border: "none", fontWeight: "400", margin: "8px" }}
@@ -286,7 +286,7 @@ console.log(cartData)
               padding: "10px",
             }}
           >
-            Végösszeg : {format(price + glsPrice)} ,-Ft
+            Végösszeg : {format(price*410 + glsPrice)} ,-Ft
           </span>
           
         </div>

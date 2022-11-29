@@ -14,7 +14,7 @@ const PrivateShip = (cartData) => {
   const deliverInfo = "GLS futárszolgálattal és magáncélú rendelés"
 
 
-  console.log(datas);
+  //console.log(datas);
 
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
@@ -145,7 +145,7 @@ const PrivateShip = (cartData) => {
     }
   };
 
-  console.log();
+  //console.log();
 
   return (
     <div>
@@ -268,6 +268,7 @@ const PrivateShip = (cartData) => {
           value={payment}
           onChange={handleSelectChange}
         >
+          <option >Kérem kattintson</option>
           <option value='Banki átutalás'>Banki átutalás</option>
           <option value='Utánvét'>Utánvét</option>
         </select>

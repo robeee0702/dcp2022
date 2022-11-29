@@ -1,10 +1,10 @@
 import { v4 as uuidv4 } from "uuid";
 
 export const category = [
-  // {
-  //   _id: 0,
-  //   title: "Akciók",
-  // },
+  {
+    _id: 0,
+    title: "AKCIÓK",
+  },
   {
     _id: 1,
     title: "Kezelőegységek",
@@ -2758,7 +2758,7 @@ export const products = [
   {
     _id: uuidv4(),
     name: "NSK Z-SG45",
-    image: "/images/ZSG45.jpg",
+    image: "/images/zsg45l.jpg",
     sale: 0, 
     slug: "produktum 138",
     category: "Implantológiai berendezések",
@@ -2777,7 +2777,7 @@ export const products = [
   {
     _id: uuidv4(),
     name: "NSK Z-SG45L",
-    image: "/images/ZSG45.jpg",
+    image: "/images/zsg45l.jpg",
     sale: 0, 
     slug: "produktum 139",
     category: "Implantológiai berendezések",
@@ -3531,10 +3531,10 @@ export const products = [
   {
     _id: uuidv4(),
     name: "NSK Egyszerhasználatos Infúziós szerelék",
-    image: "/images/nskszerelék.jpg",
+    image: "/images/nskszerelek.jpg",
     sale: 0, 
     slug: "produktum 176",
-    category: "Implantológia berendezések",
+    category: "Implantológiai berendezések",
     subcategory: "Kiegészítők",
     desc: "Infúziós szerelék NSK SurgicPro, Surgic XT,VarioSurg3 készülékekhez",
     desc2: "Kiszerelés 5db/csomag ",
@@ -3544,10 +3544,10 @@ export const products = [
   {
     _id: uuidv4(),
     name: "NSK Autoklávozható Infúziós szerelék",
-    image: "/images/nskszerelékautoklav.jpg",
+    image: "/images/nskszerelekautoklav.jpg",
     sale: 0, 
     slug: "produktum 177",
-    category: "Implantológia berendezések",
+    category: "Implantológiai berendezések",
     subcategory: "Kiegészítők",
     desc: "Infúziós szerelék NSK SurgicPro, Surgic XT,VarioSurg3 készülékekhez",
     desc2: "Kiszerelés 1 db/csomag ",
@@ -3954,14 +3954,14 @@ export const products = [
   },
   {
     _id: uuidv4(),
-    name: "Nouvag NOU Olajzó spray",
-    image: "/images/nouclean.jpg",
+    name: "Nouvag 2128 Olajzó spray",
+    image: "/images/2128spray.jpg",
     sale: 0, 
     slug: "produktum 197 ",
     category: "Ápolás és karbantartás",
     subcategory: "",
     desc: "Az eszközök és mikromotorok tisztítására és karbantartására.",
-    desc2: "400 ml; tisztítófej nélkül.",
+    desc2: "500 ml",
     amount: 1,
     price: 0,
   },
@@ -4062,7 +4062,7 @@ export const products = [
     image: "/images/aurora2_2.jpg",
     sale: 0, 
     slug: "produktum 201",
-    category: "Egyéb berendezések",
+    category: "Bútorok",
     subcategory: "Bútorok",
     desc: "A ZILFOR bútorok sorozatának úttörője. Az Aurora természetes összetételének egyszerűsége és ennek köszönhetően szilárdsága, biztonságos „menedéket” jelent azok számára, akik olyan bútorok kombinációját keresik, mely egyszerű, klasszikus, de modern stílussal rendelkezik.",
     desc2:
@@ -4080,7 +4080,7 @@ export const products = [
     image: "/images/elite_2.jpg",
     sale: 0, 
     slug: "produktum 202",
-    category: "Egyéb berendezések",
+    category: "Bútorok",
     subcategory: "Bútorok",
     desc: "Karakter eleganciával.",
     desc2:
@@ -4098,7 +4098,7 @@ export const products = [
     image: "/images/elite-touch2_2.jpg",
     sale: 0, 
     slug: "produktum 203",
-    category: "Egyéb berendezések",
+    category: "Bútorok",
     subcategory: "Bútorok",
     desc: "Karakter eleganciával.",
     desc2: "Funkcionális kapacitás csak egy kattintással.",
@@ -4117,7 +4117,7 @@ export const products = [
     image: "/images/prestige2_2.jpg",
     sale: 0, 
     slug: "produktum 204",
-    category: "Egyéb berendezések",
+    category: "Bútorok",
     subcategory: "Bútorok",
     desc: "A stílus és a funkció tökéletes összhangja.",
     desc2:
@@ -4238,7 +4238,7 @@ export const products = [
     image: "/images/Elektrokauter-surgery-plus.jpg",
     sale: 0, 
     slug: "produktum 213",
-    category: "Egyéb berendezések",
+    category: "Elektrokauterek",
     subcategory: "Elektrokauterek",
     desc: "Rádiófrekvenciás alapon működő fogászati elektrokauter.",
     desc2:
@@ -4275,7 +4275,7 @@ export const products = [
     image: "/images/Elektrokauter-surton-120.jpg",
     sale: 0, 
     slug: "produktum 214",
-    category: "Egyéb berendezések",
+    category: "Elektrokauterek",
     subcategory: "Elektrokauterek",
     desc: "A SURTRON 120 egy magas frekvenciájú elektrosebészeti berendezés, amely könnyű és közepes sebészeti beavatkozásokhoz alkalmas. Teljesítményei lehetővé teszik a tiszta CUT-ot, a vágott koagulációs BLEND-et, a felszíni koagulációt FORCED COAG-ot, a mély koagulációt necroiss SOFT COAG hiányában és az adapterrel a BIPOLAR koagulációt.",
     desc2:

@@ -68,7 +68,7 @@ const CompanyShip = (cartData) => {
 
   const datak = JSON.stringify(datas, null, "\t");
 
-  console.log("Second object:", datak);
+  //console.log("Second object:", datak);
 
 
   const handleSubmit = async (e) => {

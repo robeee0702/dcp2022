@@ -21,7 +21,6 @@ const ProductCard = (props) => {
                 <p style={{padding:"8px",marginTop:"5px",fontSize:"14px",marginBottom:"8px"}}>
                     {props.desc}
                 </p>
-                {/* <span style={{padding:"8px",fontSize:"12px",display:"flex", justifyContent:"center",alignItems:"center"}}>{props.desc}</span> */}
             </div>
 
         </Card>

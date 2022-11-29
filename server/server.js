@@ -13,11 +13,12 @@ app.use(cors());
 
 
 let transporter = nodemailer.createTransport({
-    host:'smtp.mailtrap.io',
-    port:'2525',
+    host:'smtp.rackhost.hu',
+    port:'465',
+    secure: true,
     auth: {
-        user:'d7cc7a4f8dd900',
-        pass:'19c0ce5aad6b3e'
+        user:'info@dentalcoopplus.hu',
+        pass:'Dentalcoop1'
     }
 })
 
@@ -30,7 +31,7 @@ app.post('/api/contactmail',(req,res,next) => {
 
     const mailOptions ={
         from :  email,
-        to : 'robeee0702@gmail.com',
+        to : 'info@dentalcoopplus.hu',
         phone: phone,
         subject: subject,
         html: `Üzenet érkezett tőle: 
@@ -82,8 +83,9 @@ app.post('/api/shopmail',express.json(),(req,res,next) => {
 
     const mailOptions ={
         from :  email,
-        to : 'robeee0702@gmail.com',
+        to : 'info@dentalcoopplus.hu',
         phone: phone,
+        subject: "Rendelés",
         html: `Üzenet érkezett tőle: 
         <br /><br />     
         -Név vagy Cégnév:${name} <noreply@${name}.com>

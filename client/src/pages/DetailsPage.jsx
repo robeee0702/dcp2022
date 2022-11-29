@@ -98,7 +98,13 @@ const DetailsPage = ({ handleClick }) => {
             <div className="details-price">
               <Descriptions.Item label="Price">
                 <h4>Ára:</h4>
-                {product.price}.-Ft
+                {(() => {
+                  if(product.price > 1) {
+                    return (product.price*410)+',-Ft.'
+                  }else {
+                    return 'Árajánlatkérés'
+                  }
+                })()}
               </Descriptions.Item>
             </div>
             <div className="details-category">

@@ -12,8 +12,8 @@ const ShopPage = ({ handleClick }) => {
 
   const [search, setSearch] = useState("");
 
-  console.log(data);
-  console.log(category);
+  //console.log(data);
+  //console.log(category);
 
   const [categories, setCategories] = useState(category);
 
@@ -28,9 +28,10 @@ const ShopPage = ({ handleClick }) => {
       if (search === "") {
         return value;
       } else if (
+        value.name?.toLowerCase().includes(search.toLowerCase()) ||
         value.category?.toLowerCase().includes(search.toLowerCase()) ||
-        value.desc?.toLowerCase().includes(search.toLowerCase()) ||
-        value.name?.toLowerCase().includes(search.toLowerCase())
+        value.subcategory?.toLowerCase().includes(search.toLowerCase()) ||
+        value.desc?.toLowerCase().includes(search.toLowerCase()) 
       ) {
         return value;
       }
@@ -63,16 +64,7 @@ const ShopPage = ({ handleClick }) => {
 
           <SearchEngine search={search} setSearch={setSearch} />
 
-          <button
-            style={{ left: 0, color: "red",marginLeft: "-120px"  }}
-            className="shop-btn"
-            onClick={() => products.filter(function(value) {
-              return products 
-            })}
-          >
-            AKCIÓK
-            <ChevronRightIcon />
-          </button>
+          
           {/* <TextField
           type="text"
           placeholder="Keresés"

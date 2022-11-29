@@ -17,6 +17,7 @@ import Impressum from "./components/Impressum";
 import Szechenyi from "./components/Szechenyi";
 import PickUpSite from "./components/PickUpSite";
 import Dpi from "./components/Dpi";
+import PickUpSite2 from "./components/PickUpSite2";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -79,6 +80,7 @@ function App() {
             <Route path="/impresszum" component={Impressum}/>
             <Route path="/szechenyi" component={Szechenyi}/>
             <Route path="/thanks" component={PickUpSite}/>
+            <Route path="/thank" component={PickUpSite2}/>
           </Switch>
           <Footer />
           <CookieConsent

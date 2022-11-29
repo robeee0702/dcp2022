@@ -8,6 +8,7 @@ import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrow
 import "../style/contactpage.css";
 import axios from "axios";
 import { TextField } from "@mui/material";
+import { useHistory } from "react-router-dom";
 
 const ContactPage = () => {
   const [fullName, setFullName] = useState("");
@@ -18,8 +19,9 @@ const ContactPage = () => {
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
 
+  const manageSite = useHistory();
   
   const handleSubmit = async (e) => {
     if (email && phone && fullName && subject !== "") {
@@ -45,8 +47,9 @@ const ContactPage = () => {
           .then((res) => {
             alert("Email Sent Successfully");
             setLoading(false);
-            console.log(res);
-            window.location.reload();
+            manageSite.push("/thank")
+            //console.log(res);
+            //window.location.reload();
           })
           .catch((err) => {
             console.log(err);
@@ -310,7 +313,7 @@ const ContactPage = () => {
                   border: "none",
                   color: "blue",
                   backgroundColor: " rgb(210, 208, 208)",
-                  padding: "6px",
+                  padding: "12px",
                   fontSize: "22px",
                   borderRadius: "12px"
                 }}
